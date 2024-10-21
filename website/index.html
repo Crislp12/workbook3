@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  </head>
+  <body>
+    <form style="width: 50%; margin: auto">
+      <h1>ACME Car Rental</h1>
+      <label for="nameInput" style="display: inline">First Name:</label>
+      <input type="text" name="name" id="nameInput" placeholder="Enter Name" style="width: 50%" />
+      <br />
+      <label for="numberDays" style="display: inline">Number of Days:</label>
+      <input type="text" name="days" id="numberDays" placeholder="Enter Days" style="width: 50%" />
+
+      <h2>Options</h2>
+      <br>
+      <fieldset>
+        
+        <input type="checkbox" name="options" id="electric" />
+        <label for="electric">Electronic toll tag $(3.95/day) </label>
+        <input type="checkbox" name="options" id="gps" />
+        <label for="gps">GPS $(2.95/day)</label>
+        <input type="checkbox" name="options" id="roadside" />
+        <label for="roadside">Roadside Assistance $(2.95/day)</label>
+
+
+        <h3 style="margin-top: 4%;">Under 25</h3>
+
+        <input type="radio" name="age" id="yes" />
+        <label for="yes">Yes</label>
+
+        <input type="radio" name="age" id="no" />
+        <label for="no"> No </label>
+        
+      </fieldset>
+      <br>
+      <button id="placeholderButton" type="button" >Estimate Cost</button>
+    </form>
+    
+    <br>
+
+    <div style="width: 30%; margin: auto;">
+      <ul>
+        <li style="display: flex; justify-content: space-around;">
+          <strong>Car</strong>
+          <em id="price1">xxx</em>
+        </li>
+
+        <li style="display: flex; justify-content: space-around;">
+          <strong>Options</strong>
+          <em id="price2">xxx</em>
+        </li>
+
+        <li style="display: flex; justify-content: space-around;">
+          <strong>under 25</strong>
+          <em id="price3">xxx</em>
+        </li>
+        
+        <li style="display: flex; justify-content: space-around;">
+          <strong>Total</strong>
+          <em id="price4">xxx</em>
+        </li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
